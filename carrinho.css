@@ -1,0 +1,234 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BASE ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f5f2;
+    color: #3e2723;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #331f1b;
+    color: #fff;
+    padding: 15px 0;
+}
+
+header .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: #f5deb3;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+header .menu li a {
+    text-decoration: none;
+    color: #f5deb3;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header .menu li a:hover {
+    color: #fff;
+}
+
+/* ===== TITULOS ===== */
+h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #4b2e05;
+    margin: 30px 0;
+}
+
+/* ===== CONTAINERS DE PRODUTO ===== */
+.produto-container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.produto-imagem {
+    flex: 1;
+}
+
+.produto-imagem img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.produto-info {
+    flex: 1;
+    padding: 30px;
+}
+
+.produto-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #4b2e05;
+}
+
+.produto-info p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #5c4033;
+}
+
+/* ===== FORMULÁRIOS ===== */
+label {
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+select,
+input[type="number"] {
+    display: block;
+    margin: 8px 0 18px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #c9b7a8;
+    font-size: 1em;
+    background-color: #fff;
+}
+
+/* ===== PREÇOS ===== */
+.preco {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #6f4e37;
+    margin-bottom: 20px;
+}
+
+/* ===== BOTÃO ADICIONAR ===== */
+.btn-adicionar {
+    background-color: #6f4e37;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.btn-adicionar:hover {
+    background-color: #4b2e1a;
+}
+
+/* ============================
+        CARRINHO ESTILIZADO
+=============================== */
+
+#carrinho {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+#carrinho h2 {
+    font-family: 'Playfair Display', serif;
+    color: #3e2723;
+}
+
+#carrinho-itens {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#carrinho-itens li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f0e8;
+    padding: 12px 15px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #e3d3c5;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+#carrinho-itens span {
+    font-weight: 500;
+    color: #5c4033;
+}
+
+#carrinho-itens button {
+    background: #b23a2d;
+    border: none;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+#carrinho-itens button:hover {
+    background: #e74c3c;
+}
+
+.total {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #6f4e37;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* ===== BOTÃO LIMPAR CARRINHO ===== */
+#limpar {
+    width: 100%;
+    padding: 14px;
+    background: #6f4e37;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+#limpar:hover {
+    background: #573c28;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #331f1b;
+    color: #f5deb3;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
