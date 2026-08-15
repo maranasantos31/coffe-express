@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria Express</title>
+    <link rel="stylesheet" href="cardapio.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Cafeteria Express</h1>
+            
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="#">Filiais</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <h2>Cafés</h2>
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img src="https://i.pinimg.com/736x/4d/ee/81/4dee81f6a2a2453e061e9352c62f8b78.jpg" alt="Café Expresso">
+        </div>
+
+        <div class="produto-info">
+            <h2>Café Expresso</h2>
+            <p>Nosso clássico expresso é preparado com grãos 100% selecionados, torrados artesanalmente para garantir um
+                sabor intenso e aroma marcante. Ideal para começar o dia com energia e aproveitar momentos com
+                sofisticação.</p>
+
+            <label for="torra1">Escolha a torra:</label>
+            <select id="torra1">
+                <option value="" selected disabled>Selecione uma torra:</option>
+                <option value="0">Gourmet</option>
+                <option value="1.50">Especial</option>
+                <option value="2.70">Bourbon</option>
+                <option value="1.30">Jacu</option>
+                <option value="3.40">Aeropress</option>
+                <option value="4.50">Catuaí Vermelho</option>
+                <option value="3.20">Eldourado</option>
+            </select>
+
+            <label for="inttorra1">Escolha a intensidade da torra:</label>
+            <select id="inttorra1">
+                <option value="" selected disabled>Selecione uma intensidade:</option>
+                <option value="0">Clara</option>
+                <option value="1.20">Média (+1.20)</option>
+                <option value="2.20">Escura (+2.20)</option>
+            </select>
+
+            <label for="sabor1">Escolha o tipo:</label>
+            <select id="sabor1">
+                <option value="" selected disabled>Selecione um tipo:</option>
+                <option value="0">Americano</option>
+                <option value="0.30">Tradicional</option>
+                <option value="0.50">Forte (+0.50)</option>
+                <option value="1.00">Extra Forte (+1.00)</option>
+                <option value="1.50">Premium (+1.50)</option>
+            </select>
+
+            <label>Tipo de Café:</label>
+            <div class="opcao-cafe1">
+                <label>
+                    <input type="radio" name="tipoCafe1" value="0" checked>
+                    Com cafeína
+                </label>
+                <label>
+                    <input type="radio" name="tipoCafe1" value="0.85">
+                    Descafeinado (+R$ 0,85)
+                </label>
+            </div>
+
+            <label for="tamanho1">Escolha o tamanho:</label>
+            <select id="tamanho1">
+                <option value="" selected disabled>Selecione um tamanho:</option>
+                <option value="10.90">Pequeno - 250ml</option>
+                <option value="12.90">Médio - 330ml</option>
+                <option value="14.90">Grande - 440ml</option>
+                <option value="16.90">Extra Grande - 550ml</option>
+                <option value="19.90">Gigante - 750ml</option>
+            </select>
+
+            <p class="preco">Preço: <span id="preco-valor">R$ 0,00</span></p>
+            <button id="btnAdicionar1" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772" alt="Lattes">
+        </div>
+
+        <div class="produto-info">
+            <h2>Lattes</h2>
+            <p>Nosso latte combina o equilíbrio perfeito entre café e leite vaporizado, com opções de essências e leites
+                vegetais para personalizar do seu jeito.</p>
+
+            <label for="torra2">Escolha a torra:</label>
+            <select id="torra2">
+                <option value="" selected disabled>Selecione uma torra:</option>
+                <option value="0">Gourmet</option>
+                <option value="1.50">Especial (+1.50)</option>
+                <option value="2.70">Bordboun (+2.70)</option>
+                <option value="1.30">Jacu (+1.30)</option>
+                <option value="3.40">aeropress (+3.40)</option>
+                <option value="4.50">Catuaí vermelho (4+.50)</option>
+                <option value="3.20">Eldourado (+3.20)</option>
+            </select>
+
+            <label for="inttorra2">Escolha a intensidade da torra:</label>
+            <select id="inttorra2">
+                <option value="" selected disabled>Selecione uma intensidade:</option>
+                <option value="0">Clara</option>
+                <option value="1.20">Média (+1.20)</option>
+                <option value="2.20">Escura(+2.20)</option>
+            </select>
+
+            <label for="sabor2">Escolha o sabor:</label>
+            <select id="sabor2">
+                <option value="" selected disabled>Selecione um sabor:</option>
+                <option value="0">Tradicional</option>
+                <option value="0.20">Macchiato (+0.20)</option>
+                <option value="0.50">Golden (+0.50)</option>
+                <option value="1.50">Baunilha (+1.50)</option>
+                <option value="1.50">Caramelo (+1.50)</option>
+                <option value="1.00">Canela (+1.00)</option>
+                <option value="3.85">Matcha (+3.85)</option>
+            </select>
+
+            <label>Tipo de Leite:</label>
+            <div class="opcao-leite1">
+                <label>
+                    <input type="radio" name="tipoLeite2" value="0" checked>
+                    Leite Animal
+                </label>
+                <label>
+                    <input type="radio" name="tipoLeite2" value="2.50">
+                    Leite Amendoas (+R$ 2,80)
+                </label>
+                <label>
+                    <input type="radio" name="tipoLeite2" value="2.50">
+                    Leite Aveia (+R$ 2,50)
+                </label>
+            </div>
+
+            <label>Tipo de Café:</label>
+            <div class="opcao-cafe">
+                <label>
+                    <input type="radio" name="tipoCafe2" value="0" checked>
+                    Com cafeína
+                </label>
+                <label>
+                    <input type="radio" name="tipoCafe2" value="1.80">
+                    Descafeinado (+R$ 1,80)
+                </label>
+            </div>
+
+            <label for="tamanho2">Escolha o tamanho:</label>
+            <select id="tamanho2">
+                <option value="" selected disabled>Selecione um tamanho:</option>
+                <option value="5.90">Pequeno - 250ml</option>
+                <option value="7.90">Médio - 330ml</option>
+                <option value="9.90">Grande - 440ml</option>
+                <option value="11.90">Extra Grande - 550ml</option>
+                <option value="13.90">Gigante - 750ml</option>
+            </select>
+
+            <p class="preco">Preço: <span id="preco-valor2">R$ 0,00</span></p>
+            <button id="btnAdicionar2" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img src="https://i.pinimg.com/736x/13/77/b2/1377b2ab9ab592ba8b2fa8a3f724e16e.jpg" alt="Gelados">
+        </div>
+
+        <div class="produto-info">
+            <h2>Gelados</h2>
+            <p>Nosso café gelado é a escolha ideal para dias quentes. Refrescante, cremoso e cheio de sabor. Feito com
+                café espresso de alta qualidade, misturado com gelo e um toque de doçura natural, ele oferece energia e
+                suavidade na medida certa. Perfeito para quem quer saborear o café de um jeito moderno e leve.</p>
+
+            <label for="torra3">Escolha a torra:</label>
+            <select id="torra3">
+                <option value="" selected disabled>Selecione uma torra:</option>
+                <option value="0">Gourmet</option>
+                <option value="1.50">Especial</option>
+                <option value="2.70">Bordboun</option>
+                <option value="1.30">Jacu</option>
+                <option value="3.40">aeropress</option>
+                <option value="4.50">Catuaí vermelho</option>
+                <option value="3.20">Eldourado</option>
+            </select>
+
+            <label for="inttorra3">Escolha a intensidade:</label>
+            <select id="inttorra3">
+                <option value="" selected disabled>Selecione um intensidade:</option>
+                <option value="0">Clara</option>
+                <option value="1.20">Média</option>
+                <option value="2.20">Escura</option>
+            </select>
+
+            <label for="sabor3">Escolha o sabor:</label>
+            <select id="sabor3">
+                <option value="" selected disabled>Selecione um tipo:</option>
+                <option value="0">Tradicional</option>
+                <option value="0">Cold Brew</option>
+                <option value="0.50">Iced Latte Gourmet</option>
+                <option value="1.50">Frappuccino</option>
+                <option value="1.00">Affogato</option>
+                <option value="5.85">Chantilly</option>
+            </select>
+
+            <div class="opcao-leite2">
+                <label>
+                    <input type="radio" name="tipoLeite3" value="0" checked>
+                    <span>Leite de Origem Animal</span>
+                </label>
+                <label>
+                    <input type="radio" name="tipoLeite3" value="2.85">
+                    <span>Leite de Amêndoas (+R$ 2,85)</span>
+                </label>
+                <label>
+                    <input type="radio" name="tipoLeite3" value="2.50">
+                    <span>Leite de Aveia (+R$ 2,50)</span>
+                </label>
+            </div>
+
+            <label>Tipo de Café:</label>
+            <div class="opcao-cafe">
+                <label>
+                    <input type="radio" name="tipoCafe3" value="0" checked>
+                    Com cafeína
+                </label>
+                <label>
+                    <input type="radio" name="tipoCafe3" value="0.85">
+                    Descafeinado (+R$ 0,85)
+                </label>
+            </div>
+
+            <label for="tamanho3">Escolha o tamanho:</label>
+            <select id="tamanho3">
+                <option value="" selected disabled>Selecione um tamanho:</option>
+                <option value="10.90">Pequeno - 250ml</option>
+                <option value="12.90">Médio - 330ml</option>
+                <option value="14.90">Grande - 440ml</option>
+                <option value="16.90">Grande - 550ml</option>
+                <option value="19.90">Grande - 750ml</option>
+            </select>
+
+            <p class="preco">Preço: <span id="preco-valor3">R$ 0,00</span></p>
+            <button id="btnAdicionar3" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+    <h2>Doces</h2>
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img id="img-bolo" src="https://i.pinimg.com/736x/63/40/7a/63407aaacaa36fea3fd9b063a589eb2d.jpg"
+                alt="Imagem do Bolo">
+        </div>
+
+        <div class="produto-info">
+            <h2>Bolos</h2>
+            <p>Escolha seu bolo favorito, perfeito para comemorações ou para adoçar o seu dia. Você pode optar por uma
+                fatia deliciosa ou levar o bolo inteiro para compartilhar com amigos e família.</p>
+
+            <label for="tipoBolo1">Escolha a porção:</label>
+            <select id="tipoBolo1">
+                <option value="" selected disabled>Selecione:</option>
+                <option value="8.90">Fatia</option>
+                <option value="59.90">Bolo Inteiro</option>
+            </select>
+
+            <label for="saborBolo1">Escolha o sabor:</label>
+            <select id="saborBolo1">
+                <option value="" selected disabled>Selecione um sabor:</option>
+                <option value="5.00">Chocolate</option>
+                <option value="3.00">Baunilha</option>
+                <option value="7.00">Red Velvet</option>
+                <option value="3.00">Cenoura com Brigadeiro</option>
+                <option value="3.50">Laranja</option>
+                <option value="2.50">Limão</option>
+            </select>
+
+            <label for="saborRecheio1">Escolha o recheio:</label>
+            <select id="saborRecheio1">
+                <option value="" selected disabled>Selecione um recheio:</option>
+                <option value="2.00">Chocolate</option>
+                <option value="1.00">Baunilha</option>
+                <option value="1.50">Ninho</option>
+                <option value="3.20">Doce de leite</option>
+                <option value="1.20">Coco</option>
+                <option value="1.80">Marshmallow</option>
+            </select>
+
+            <p class="preco">Preço: <span id="preco-bolo">R$ 0,00</span></p>
+            <button id="btnAdicionarBolo" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img id="img-bolo" src="https://i.pinimg.com/1200x/2a/70/06/2a70069e1044bd80da06bef5e12cb026.jpg"
+                alt="Imagem do Torta">
+        </div>
+
+        <div class="produto-info">
+            <h2>Torta Trançada</h2>
+            <p>Escolha sua torta favorito, perfeito para comemorações ou para adoçar o seu dia. Você pode optar por uma
+                fatia deliciosa ou levar a torta inteira para compartilhar com amigos e família.</p>
+
+            <label for="tipoTorta">Escolha a porção:</label>
+            <select id="tipoTorta">
+                <option value="" selected disabled>Selecione:</option>
+                <option value="8.90">Fatia</option>
+                <option value="59.90">Bolo Inteiro</option>
+            </select>
+
+            <label for="saborTorta">Escolha o sabor:</label>
+            <select id="saborTorta">
+                <option value="" selected disabled>Selecione um sabor:</option>
+                <option value="5.00">Chocolate</option>
+                <option value="3.00">Holandesa</option>
+                <option value="7.00">Frutas vermelhas</option>
+                <option value="3.00">Avelã</option>
+                <option value="2.50">Limão</option>
+            </select>
+
+            <label for="saborRecheio2">Escolha o recheio:</label>
+            <select id="saborRecheio2">
+                <option value="" selected disabled>Selecione um recheio:</option>
+                <option value="2.00">Chocolate</option>
+                <option value="1.00">Baunilha</option>
+                <option value="1.50">Ninho</option>
+                <option value="3.20">Doce de leite</option>
+                <option value="1.20">Coco</option>
+                <option value="1.80">Marshmallow</option>
+            </select>
+
+            <p class="preco">Preço: <span id="preco-bolo">R$ 0,00</span></p>
+            <button id="btnAdicionarTorta" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img id="img-croissant-doce" src="https://i.pinimg.com/736x/73/cd/d0/73cdd08550b1f203d8c188bc931e4ad9.jpg"
+                alt="Croissant Doce">
+        </div>
+
+        <div class="produto-info">
+            <h2>Croissant Doce</h2>
+            <p>Delicie-se com nossos croissants doces fresquinhos, crocantes por fora e macios por dentro. Escolha sua
+                porção, recheio e extras para criar o croissant perfeito para seu café da manhã ou lanche da tarde.</p>
+
+            <label for="recheioCroissantDoce">Escolha o recheio:</label>
+            <select id="recheioCroissantDoce">
+                <option value="" selected disabled>Selecione um recheio:</option>
+                <option value="1.80">Chocolate</option>
+                <option value="1.80">Doce de Leite</option>
+                <option value="1.30">Creme de Baunilha</option>
+                <option value="4.40">Frutas Vermelhas</option>
+                <option value="4.80">Nutella</option>
+            </select>
+
+            <label for="tamanhoCroasaint">Escolha o recheio:</label>
+            <select id="tamanho">
+                <option value="" selected disabled>Selecione um tamanho:</option>
+                <option value="6.50">pequeno - 250g</option>
+                <option value="10.60">Médio - 440g</option>
+                <option value="15.00">Grande -750g</option>
+            </select>
+            <p class="preco">Preço: <span id="preco-croissant-doce">R$ 0,00</span></p>
+            <button id="btnAdicionarCroissant" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img id="img-brigadeiro" src="https://i.pinimg.com/736x/d2/3c/7c/d23c7c987ca29f659be9ecd530677fe8.jpg"
+                alt="Imagem do brigadeiro">
+        </div>
+
+        <div class="produto-info">
+            <h2>Brigadeiro</h2>
+            <p>Delicie-se com nossos brigadeiros artesanais, feitos com chocolate de qualidade e opções de recheios e coberturas para deixar ainda mais irresistíveis.</p>
+
+            <label for="tipoBrigadeiro">Escolha o tipo:</label>
+            <select id="tipoBrigadeiro">
+                <option value="" selected disabled>Selecione um sabor:</option>
+                <option value="1.15">Avela</option>
+                <option value="1.00">Doce de leite</option>
+                <option value="3.20">Frutas vermelhas</option>
+                <option value="1.50">Oreo</option>
+                <option value="1.30">Ninho</option>
+                <option value="2.80">Pistache</option>
+            </select>
+
+            <label for="tamanhoBrigadeiro">Escolha o tamanho:</label>
+            <select id="tamanhoBrigadeiro">
+                <option value="5.50">Pequeno - 250g</option>
+                <option value="7.50">Médio - 475g</option>
+                <option value="9.50">Grande - 750g</option>
+            </select>
+
+            <p class="preco">Preço: <span id="preco-salgado1">R$ 0,00</span></p>
+            <button id="btnAdicionarSalgado1" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+
+    <h2>Salgados</h2>
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img id="img-salgado" src="https://i.pinimg.com/736x/55/dd/ed/55ddedc4b96814916b7e68476dab6661.jpg"
+                alt="Imagem do Salgado">
+        </div>
+
+        <div class="produto-info">
+            <h2>Coxinha</h2>
+            <p>Escolha sua coxinha favorita e saboreie o clássico brasileiro em sua melhor forma: massa dourada, recheio
+                suculento e aquele toque caseiro irresistível que combina perfeitamente com um café quentinho.</p>
+
+            <label for="tipoSalgado1">Escolha o tipo:</label>
+            <select id="tipoSalgado1">
+                <option value="" selected disabled>Selecione um sabor</option>
+                <option value="0.85">Coxinha</option>
+                <option value="1.00">Kibe</option>
+                <option value="1.20">Pastel</option>
+                <option value="1.50">Enroladinho</option>
+                <option value="1.30">Torta salgada</option>
+                <option value="1.80">Empada</option>
+            </select>
+
+            <label for="tamanhoSalgado1">Escolha o tamanho:</label>
+            <select id="tamanhoSalgado1">
+                <option value="5.50">Pequeno - 250g</option>
+                <option value="7.50">Médio - 475g</option>
+                <option value="9.50">Grande - 750g</option>
+            </select>
+
+            <p class="preco">Preço: <span id="preco-salgado1">R$ 0,00</span></p>
+            <button id="btnAdicionarSalgado1" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img id="img-sanduiche" src="https://i.pinimg.com/1200x/91/78/85/91788517cfafa2289a8f6a72e8c41d41.jpg"
+                alt="Imagem do Sanduíche">
+        </div>
+
+        <div class="produto-info">
+            <h2>Sanduíche</h2>
+            <p>Monte o seu sanduíche artesanal do seu jeito!. Frescor, sabor e crocância em cada mordida.</p>
+
+            <label for="tipoPao">Escolha um pão:</label>
+            <select id="tipoPao">
+                <option value="" selected disabled>Selecione um pão</option>
+                <option value="0.25">Francês</option>
+                <option value="0.40">Cara</option>
+                <option value="0.80">Milho</option>
+                <option value="1.10">9 Grãos</option>
+                <option value="0.30">Hambúrguer</option>
+                <option value="1.40">Sem Glúten</option>
+            </select>
+
+            <label for="tipoPao">Escolha uma proteina:</label>
+            <select id="tipoPao">
+                <option value="" selected disabled>Selecione uma proteina</option>
+                <option value="4.25">Patinho</option>
+                <option value="2.40">Frango</option>
+                <option value="3.80">Salame</option>
+                <option value="2.10">Mortadela</option>
+                <option value="4.80">Atum</option>
+                <option value="2.40">Soja</option>
+            </select>
+
+            <fieldset class="saladas">
+                <legend>Escolha suas salada:(opcional)</legend>
+                <label><input type="checkbox" name="salada" value="0"> Alface</label>
+                <label><input type="checkbox" name="salada" value="0"> Tomate</label>
+                <label><input type="checkbox" name="salada" value="0"> Cebola</label>
+                <label><input type="checkbox" name="salada" value="0"> Pimentão</label>
+                <label><input type="checkbox" name="salada" value="0"> Picles</label>
+                <label><input type="checkbox" name="salada" value="0"> Rúcula</label>
+            </fieldset>
+
+            <label for="molho">Escolha um molho:</label>
+            <select id="molho">
+                <option value="" selected disabled>Selecione um molho</option>
+                <option value="0.50">Molho de alho</option>
+                <option value="0.80">Molho de churasco</option>
+                <option value="0.70">Mostarda e Mel</option>
+                <option value="0.90">Pimenta</option>
+                <option value="1.00">Mix de ervas</option>
+            </select>
+
+            <label for="tamanhoSanduiche">Escolha o tamanho:</label>
+            <select id="tamanhoSanduiche">
+                <option value="" selected disabled>tamanho:</option>
+                <option value="6.50">Pequeno - 15cm</option>
+                <option value="13.50">Grande - 30cm</option>
+            </select>
+
+            <p class="preco">Preço: <span id="preco-sanduiche">R$ 0,00</span></p>
+            <button id="btnAdicionarSanduiche" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img id="img-torta" src="https://i.pinimg.com/1200x/1f/c6/d2/1fc6d2b8c6cb0a0a6b3ee3e6d587dc5a.jpg"
+                alt="Imagem da Torta">
+        </div>
+
+        <div class="produto-info">
+            <h2>Tortas</h2>
+            <p>Escolha sua torta favorita e decida se quer saborear um pedaço irresistível ou levar a torta inteira para
+                compartilhar. Cada fatia é feita com ingredientes frescos e muito carinho.</p>
+
+            <label for="tipoTorta">Escolha a porção:</label>
+            <select id="tipoTorta">
+                <option value="" selected disabled>Selecione:</option>
+                <option value="8.90">Pedaço</option>
+                <option value="57.80">Torta Inteira</option>
+            </select>
+
+            <label for="saborTorta">Escolha o sabor:</label>
+            <select id="saborTorta">
+                <option value="" selected disabled>Selecione um sabor:</option>
+                <option value="4.60">Frango</option>
+                <option value="5.40">Carne</option>
+                <option value="3.70">Salsicha</option>
+                <option value="2.20">Frios</option>
+                <option value="Atum">Atum</option>
+                <option value="3.20">Mix</option>
+            </select>
+
+            <p class="preco">Preço: <span id="preco-torta">R$ 0,00</span></p>
+            <button id="btnAdicionarTorta" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+*
+    <footer>
+        <p>© Cafeteria Express 2025, feito com amor e muito café ☕</p>
+    </footer>
+
+    <script src="cardapio.js"></script>
+</body>
+
+</html>
