@@ -1,0 +1,23 @@
+.login-box-larga form {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.login-box-larga form::-webkit-scrollbar {
+    width: 6px;
+}
+
+.login-box-larga form::-webkit-scrollbar-thumb {
+    background: #c9b7a8;
+    border-radius: 10px;
+}
+
+@media (max-width: 720px) {
+    /* no celular a página inteira rola, sem barra de rolagem dentro do formulário */
+    .login-box-larga form {
+        max-height: none;
+        overflow-y: visible;
+        padding-right: 0;
+    }
+}

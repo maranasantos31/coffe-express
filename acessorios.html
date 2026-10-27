@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Acessórios - Cafeteria Express</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="acessorios.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Cafeteria Express</a>
+            <nav>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="menu" id="menu-principal">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="carrinho.html">Cardápio</a></li>
+                    <li><a href="acessorios.html" class="active">Acessórios</a></li>
+                    <li><a href="filial.html">Filiais</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li class="menu-acoes-mobile"><a href="login.html" class="botao-login">Entrar</a></li>
+                    <li class="menu-acoes-mobile"><a href="cadastro.html" class="botao-cadastro">Cadastre-se</a></li>
+                </ul>
+                <div class="nav-acoes">
+                    <a href="carrinho-resumo.html" class="icone-carrinho" aria-label="Ver carrinho">
+                        <svg class="icone-carrinho-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L20.88 4H4.54l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg> <span id="cart-badge" class="cart-badge">0</span>
+                    </a>
+                    <a href="login.html" class="botao-login">Entrar</a>
+                    <a href="cadastro.html" class="botao-cadastro">Cadastre-se</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="acessorios-intro">
+        <h1>Acessórios &amp; Grãos</h1>
+        <p>Equipamentos e kits selecionados para preparar o café perfeito em casa.</p>
+    </section>
+
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img src="https://ecommerce.vtexassets.com/arquivos/ids/155702-800-1082?v=638119028423030000&width=800&height=1082&aspect=true" alt="Torrador">
+        </div>
+        <div class="produto-info">
+            <h2>Torrador de café</h2>
+            <p>Nosso torrador de café combina precisão e toque artesanal para revelar grãos com aroma envolvente e sabor profundo.</p>
+            <p class="preco">Preço: <span>R$ 670,99</span></p>
+            <button id="btnAdicionar1" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img src="https://ecommerce.vtexassets.com/arquivos/ids/155647-800-1082?v=638116519564430000&width=800&height=1082&aspect=true" alt="Balança">
+        </div>
+        <div class="produto-info">
+            <h2>Balança Dosadora Pressca</h2>
+            <p>A Balança Dosadora Pressca oferece precisão absoluta em cada medida, elevando a preparação do café a um padrão profissional.</p>
+            <p class="preco">Preço: <span>R$ 29,99</span></p>
+            <button id="btnAdicionar1-2" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img src="https://ecommerce.vtexassets.com/arquivos/ids/155675-800-1082?v=638118862504030000&width=800&height=1082&aspect=true" alt="Torra Arábica">
+        </div>
+        <div class="produto-info">
+            <h2>Torra Arábica</h2>
+            <p>A torra Arábica realça a delicadeza e a doçura natural dos grãos, entregando aroma suave e sabor equilibrado.</p>
+
+            <label for="torra2">Em grãos:</label>
+            <select id="torra2">
+                <option value="" disabled selected>Selecione uma torra</option>
+                <option value="36.12">Clássico (+36.12)</option>
+                <option value="37.32">Bourbon Amarelo (+37.32)</option>
+                <option value="37.32">Catucaí (+37.32)</option>
+                <option value="37.32">Arara (+37.32)</option>
+                <option value="36.12">Intenso (+36.12)</option>
+                <option value="37.32">Acauã (+37.32)</option>
+                <option value="64.64">Descafeinado (+64.64)</option>
+                <option value="54.59">Orgânico (+54.59)</option>
+                <option value="43.90">Japy (+43.90)</option>
+            </select>
+
+            <label for="intorra2">Tamanho:</label>
+            <select id="intorra2">
+                <option value="" disabled selected>Selecione um tamanho</option>
+                <option value="0">250g</option>
+                <option value="97.54">1kg (+97.54)</option>
+                <option value="498.20">4kg (+498.20)</option>
+                <option value="632.75">5kg (+632.75)</option>
+                <option value="767.30">6kg (+767.30)</option>
+            </select>
+
+            <p class="preco">Preço: <span id="preco-valor2">R$ 0,00</span></p>
+            <button id="btnAdicionar2" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img src="https://ecommerce.vtexassets.com/arquivos/ids/156147-800-1082?v=638260664191070000&width=800&height=1082&aspect=true" alt="Kit Grão e Moedor">
+        </div>
+        <div class="produto-info">
+            <h2>Kit Presente Grão e Moedor</h2>
+            <p>O Kit Presente Grão e Moedor reúne excelência e cuidado em cada detalhe. Um presente elegante, pensado para quem aprecia qualidade e autenticidade.</p>
+            <p class="preco">Preço: <span>R$ 412,20</span></p>
+            <button id="btnAdicionar3" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img src="https://ecommerce.vtexassets.com/arquivos/ids/155706-800-1082?v=638119036213270000&width=800&height=1082&aspect=true" alt="Kit Drip Coffee">
+        </div>
+        <div class="produto-info">
+            <h2>Kit Drip Coffee Clássico + Caneca Orfeu</h2>
+            <p>O Kit Drip Coffee Clássico acompanhado da Caneca Orfeu transforma qualquer momento em uma pausa especial.</p>
+            <p class="preco">Preço: <span>R$ 120,20</span></p>
+            <button id="btnAdicionar3-2" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img src="https://ecommerce.vtexassets.com/arquivos/ids/156273-800-1082?v=638441379623600000&width=800&height=1082&aspect=true" alt="Kit Clássico">
+        </div>
+        <div class="produto-info">
+            <h2>Kit Presente Grão Clássico 250g + Moedor</h2>
+            <p>O Kit Presente Grão Clássico 250g e Moedor é ideal para quem valoriza frescor e intensidade no preparo do café.</p>
+            <p class="preco">Preço: <span>R$ 438,33</span></p>
+            <button id="btnAdicionar3-3" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+    <main class="produto-container">
+        <div class="produto-imagem">
+            <img src="https://i.pinimg.com/736x/76/9f/a9/769fa989979f74f078daa351ef1a2885.jpg" alt="Cápsulas de Café Nespresso">
+        </div>
+        <div class="produto-info">
+            <h2>Cápsulas de Café Nespresso</h2>
+            <p>A intensidade refinada das cápsulas Orfeu revela o melhor da tradição cafeeira brasileira, com aroma envolvente e notas harmoniosas.</p>
+
+            <label for="sabor3">Sabor:</label>
+            <select id="sabor3">
+                <option value="" disabled selected>Selecione um sabor</option>
+                <option value="29.99">Clássico</option>
+                <option value="29.99">Bourbon Amarelo</option>
+                <option value="29.99">Catucaí</option>
+                <option value="29.99">Arara</option>
+                <option value="29.99">Intenso</option>
+                <option value="29.99">Acauã</option>
+                <option value="29.99">Descafeinado</option>
+                <option value="29.99">Orgânico</option>
+                <option value="29.99">Japy</option>
+            </select>
+
+            <label for="quantidade3">Quantidade:</label>
+            <select id="quantidade3">
+                <option value="" disabled selected>Selecione a quantidade</option>
+                <option value="0">10 un</option>
+                <option value="50.54">20 un (+50.54)</option>
+                <option value="60.20">30 un (+60.20)</option>
+                <option value="165.06">50 un (+165.06)</option>
+                <option value="484.20">200 un (+484.20)</option>
+            </select>
+
+            <p class="preco">Preço: <span id="preco-valor3">R$ 0,00</span></p>
+            <button id="btnAdicionar4" class="btn-adicionar">Adicionar ao Carrinho</button>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-col rodape-marca">
+                <a href="index.html" class="rodape-logo">Cafeteria Express</a>
+                <p>O melhor café da cidade, feito com grãos selecionados e muito amor.</p>
+            </div>
+
+            <nav class="rodape-col" aria-label="Navegação do rodapé">
+                <h3>Navegue</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="carrinho.html">Cardápio</a></li>
+                    <li><a href="acessorios.html">Acessórios</a></li>
+                    <li><a href="filial.html">Filiais</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+
+            <nav class="rodape-col" aria-label="Sua conta">
+                <h3>Sua conta</h3>
+                <ul>
+                    <li><a href="login.html">Entrar</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="carrinho-resumo.html">Meu carrinho</a></li>
+                </ul>
+            </nav>
+
+            <div class="rodape-col">
+                <h3>Atendimento</h3>
+                <ul>
+                    <li><a href="filial.html">Encontrar uma filial</a></li>
+                    <li><a href="sobre.html">Nossa história</a></li>
+                    <li><a href="mailto:contato@cafeteriaexpress.com.br">contato@cafeteriaexpress.com.br</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rodape-base">
+            <div class="rodape-base-container">
+                <p>&copy; <span data-ano>2025</span> Cafeteria Express. Todos os direitos reservados.</p>
+                <p>Feito com amor e muito café &#9749;</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="nav.js"></script>
+    <script src="acessorios.js"></script>
+</body>
+
+</html>

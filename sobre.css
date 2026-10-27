@@ -1,0 +1,192 @@
+.sobre-hero {
+    text-align: center;
+    padding: 60px 8% 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sobre-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6em;
+    color: #3e2723;
+    margin-bottom: 14px;
+}
+
+.sobre-hero p {
+    color: #5c4033;
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
+.fundadora {
+    padding: 40px 8%;
+}
+
+.fundadora-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.fundadora-foto {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.fundadora-foto img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    border: 6px solid #fff;
+}
+
+.fundadora-texto {
+    flex: 1;
+    min-width: 260px;
+}
+
+.fundadora-tag {
+    display: inline-block;
+    background: #f5deb3;
+    color: #573c28;
+    font-size: 0.78em;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    padding: 5px 14px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.fundadora-texto h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #3e2723;
+    margin: 0 0 14px;
+}
+
+.fundadora-texto p {
+    color: #5c4033;
+    line-height: 1.7;
+    margin-bottom: 14px;
+}
+
+.fundadora-texto p:last-child {
+    font-style: italic;
+    color: #6f4e37;
+    border-left: 3px solid #d7b899;
+    padding-left: 14px;
+}
+
+.valores {
+    background: #fff;
+    padding: 60px 8%;
+    margin-top: 30px;
+}
+
+.valores-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.valores h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
+    color: #3e2723;
+    margin-bottom: 34px;
+}
+
+.valores-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    justify-content: center;
+}
+
+.valor-item {
+    flex: 1;
+    min-width: 230px;
+    max-width: 300px;
+    background: #f8f5f2;
+    border-radius: 12px;
+    padding: 28px 22px;
+    text-align: left;
+}
+
+.valor-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1em;
+    color: #3e2723;
+    margin: 0 0 10px;
+}
+
+.valor-item p {
+    color: #5c4033;
+    font-size: 0.92em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 720px) {
+    .fundadora-container,
+    .fundadora-inversa .fundadora-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .fundadora-texto p:last-child {
+        border-left: none;
+        border-top: 3px solid #d7b899;
+        padding-left: 0;
+        padding-top: 10px;
+    }
+
+    .fundadora-foto img {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* foto sempre acima do texto, inclusive na seção invertida */
+    .fundadora-foto {
+        order: -1;
+    }
+
+    .fundadora-texto {
+        min-width: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .sobre-hero {
+        padding: 40px 6% 10px;
+    }
+
+    .sobre-hero h1 {
+        font-size: 2em;
+    }
+
+    .fundadora {
+        padding: 28px 6%;
+    }
+
+    .fundadora-texto h2 {
+        font-size: 1.6em;
+    }
+
+    .valores {
+        padding: 44px 6%;
+    }
+
+    .valor-item {
+        min-width: 0;
+        max-width: none;
+        flex-basis: 100%;
+    }
+}

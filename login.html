@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Login - Cafeteria Express</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Cafeteria Express</a>
+            <nav>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="menu" id="menu-principal">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="carrinho.html">Cardápio</a></li>
+                    <li><a href="acessorios.html">Acessórios</a></li>
+                    <li><a href="filial.html">Filiais</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li class="menu-acoes-mobile"><a href="cadastro.html" class="botao-cadastro">Cadastre-se</a></li>
+                </ul>
+                <div class="nav-acoes">
+                    <a href="carrinho-resumo.html" class="icone-carrinho" aria-label="Ver carrinho">
+                        <svg class="icone-carrinho-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L20.88 4H4.54l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg> <span id="cart-badge" class="cart-badge">0</span>
+                    </a>
+                    <a href="cadastro.html" class="botao-cadastro">Cadastre-se</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="login-container">
+        <div class="login-box">
+            <h1>Cafeteria Express</h1>
+            <p class="slogan">Entre e saboreie o melhor café☕</p>
+
+            <form id="loginForm">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha" required>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <p class="cadastro">Ainda não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-col rodape-marca">
+                <a href="index.html" class="rodape-logo">Cafeteria Express</a>
+                <p>O melhor café da cidade, feito com grãos selecionados e muito amor.</p>
+            </div>
+
+            <nav class="rodape-col" aria-label="Navegação do rodapé">
+                <h3>Navegue</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="carrinho.html">Cardápio</a></li>
+                    <li><a href="acessorios.html">Acessórios</a></li>
+                    <li><a href="filial.html">Filiais</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+
+            <nav class="rodape-col" aria-label="Sua conta">
+                <h3>Sua conta</h3>
+                <ul>
+                    <li><a href="login.html">Entrar</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="carrinho-resumo.html">Meu carrinho</a></li>
+                </ul>
+            </nav>
+
+            <div class="rodape-col">
+                <h3>Atendimento</h3>
+                <ul>
+                    <li><a href="filial.html">Encontrar uma filial</a></li>
+                    <li><a href="sobre.html">Nossa história</a></li>
+                    <li><a href="mailto:contato@cafeteriaexpress.com.br">contato@cafeteriaexpress.com.br</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rodape-base">
+            <div class="rodape-base-container">
+                <p>&copy; <span data-ano>2025</span> Cafeteria Express. Todos os direitos reservados.</p>
+                <p>Feito com amor e muito café &#9749;</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="nav.js"></script>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            mostrarToast("Login realizado com sucesso!");
+            setTimeout(() => {
+                window.location.href = "carrinho.html";
+            }, 900);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Filiais - Cafeteria Express</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="filial.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">Cafeteria Express</a>
+            <nav>
+                <button id="nav-toggle" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="menu" id="menu-principal">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="carrinho.html">Cardápio</a></li>
+                    <li><a href="acessorios.html">Acessórios</a></li>
+                    <li><a href="filial.html" class="active">Filiais</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li class="menu-acoes-mobile"><a href="login.html" class="botao-login">Entrar</a></li>
+                    <li class="menu-acoes-mobile"><a href="cadastro.html" class="botao-cadastro">Cadastre-se</a></li>
+                </ul>
+                <div class="nav-acoes">
+                    <a href="carrinho-resumo.html" class="icone-carrinho" aria-label="Ver carrinho">
+                        <svg class="icone-carrinho-svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L20.88 4H4.54l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg> <span id="cart-badge" class="cart-badge">0</span>
+                    </a>
+                    <a href="login.html" class="botao-login">Entrar</a>
+                    <a href="cadastro.html" class="botao-cadastro">Cadastre-se</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="filiais">
+        <div class="filiais-container">
+            <div class="filiais-texto">
+                <h2>Nossas Filiais</h2>
+                <p>A Cafeteria Express está presente em diversos cantos da cidade — e do mundo — trazendo o mesmo aroma, qualidade e acolhimento em cada xícara servida. Encontre a filial mais próxima e venha saborear o melhor café.</p>
+            </div>
+
+            <div class="filiais-lista">
+                <div class="filial-item">
+                    <img src="https://i.pinimg.com/736x/df/58/b2/df58b22138cc8ecae28d000a2488c409.jpg" alt="Filial Centro">
+                    <h3>Centro</h3>
+                    <p>Rua das Flores, 120 • Funcionamento das 7h às 20h</p>
+                </div>
+
+                <div class="filial-item">
+                    <img src="https://i.pinimg.com/736x/d8/87/4c/d8874c79c79d962ad25ae459e4f1d3ed.jpg" alt="Filial Norte">
+                    <h3>Bairro Norte</h3>
+                    <p>Avenida Brasil, 455 • Funcionamento das 8h às 22h</p>
+                </div>
+
+                <div class="filial-item">
+                    <img src="https://i.pinimg.com/1200x/a1/de/85/a1de856ca08ae9d905de5e0d5857d392.jpg" alt="Filial Sul">
+                    <h3>Bairro Sul</h3>
+                    <p>Rua Aurora, 89 • Funcionamento das 7h às 19h</p>
+                </div>
+
+                <div class="filial-item">
+                    <img src="https://i.pinimg.com/736x/4a/b2/57/4ab25760d87d098e86e83141c8f797eb.jpg" alt="Santos">
+                    <h3>Santos • Brasil</h3>
+                    <p>Rua do Porto, 221 — 7h às 20h</p>
+                </div>
+
+                <div class="filial-item">
+                    <img src="https://i.pinimg.com/736x/22/39/8c/22398caee6fda057dcc9c1c6f9218086.jpg" alt="São Paulo">
+                    <h3>São Paulo • Brasil</h3>
+                    <p>Avenida Central, 455 — 8h às 22h</p>
+                </div>
+
+                <div class="filial-item">
+                    <img src="https://i.pinimg.com/736x/66/47/6d/66476d34d1ab38825f3d8530599bf30f.jpg" alt="Buenos Aires">
+                    <h3>Buenos Aires • Argentina</h3>
+                    <p>Avenida Libertad, 302 — 7h às 20h</p>
+                </div>
+
+                <div class="filial-item">
+                    <img src="https://i.pinimg.com/736x/7f/5e/c1/7f5ec140b3ff4ae7892af4e2706a66ed.jpg" alt="Paris">
+                    <h3>Paris • França</h3>
+                    <p>Rue Lumière, 19 — 9h às 23h</p>
+                </div>
+
+                <div class="filial-item">
+                    <img src="https://i.pinimg.com/736x/bc/b3/e8/bcb3e83cfe40489fee7c8ddf75c2bc0c.jpg" alt="Londres">
+                    <h3>Londres • Reino Unido</h3>
+                    <p>Brick Lane, 87 — 8h às 20h</p>
+                </div>
+
+                <div class="filial-item">
+                    <img src="https://i.pinimg.com/736x/e4/5f/33/e45f33b7e3f479d2b3f81a51cc20475d.jpg" alt="Cidade do Cabo">
+                    <h3>Cidade do Cabo • África do Sul</h3>
+                    <p>Victoria Road, 42 — 9h às 19h</p>
+                </div>
+
+                <div class="filial-item">
+                    <img src="https://i.pinimg.com/736x/07/68/42/0768425212b7315f1462b3bcb1ca51b1.jpg" alt="Seul">
+                    <h3>Seul • Coreia do Sul</h3>
+                    <p>Gangnam Street, 101 — 10h às 23h</p>
+                </div>
+
+                <div class="filial-item">
+                    <img src="https://i.pinimg.com/736x/ec/e6/78/ece6786463011bad48651da99e212df9.jpg" alt="Tóquio">
+                    <h3>Tóquio • Japão</h3>
+                    <p>Shibuya, 298 — 8h às 22h</p>
+                </div>
+
+                <div class="filial-item">
+                    <img src="https://i.pinimg.com/736x/54/2c/45/542c451cdfb4368f9c384438fafa9977.jpg" alt="Sydney">
+                    <h3>Sydney • Austrália</h3>
+                    <p>Harbour Road, 55 — 7h às 21h</p>
+                </div>
+            </div>
+
+            <div class="filiais-botao-centro">
+                <button class="botao-localizacao" id="btnLocalizacao">
+                    Encontrar filial mais próxima
+                </button>
+                <p class="resultado-filial" id="resultadoFilial"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="rodape-container">
+            <div class="rodape-col rodape-marca">
+                <a href="index.html" class="rodape-logo">Cafeteria Express</a>
+                <p>O melhor café da cidade, feito com grãos selecionados e muito amor.</p>
+            </div>
+
+            <nav class="rodape-col" aria-label="Navegação do rodapé">
+                <h3>Navegue</h3>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="carrinho.html">Cardápio</a></li>
+                    <li><a href="acessorios.html">Acessórios</a></li>
+                    <li><a href="filial.html">Filiais</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                </ul>
+            </nav>
+
+            <nav class="rodape-col" aria-label="Sua conta">
+                <h3>Sua conta</h3>
+                <ul>
+                    <li><a href="login.html">Entrar</a></li>
+                    <li><a href="cadastro.html">Cadastre-se</a></li>
+                    <li><a href="carrinho-resumo.html">Meu carrinho</a></li>
+                </ul>
+            </nav>
+
+            <div class="rodape-col">
+                <h3>Atendimento</h3>
+                <ul>
+                    <li><a href="filial.html">Encontrar uma filial</a></li>
+                    <li><a href="sobre.html">Nossa história</a></li>
+                    <li><a href="mailto:contato@cafeteriaexpress.com.br">contato@cafeteriaexpress.com.br</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rodape-base">
+            <div class="rodape-base-container">
+                <p>&copy; <span data-ano>2025</span> Cafeteria Express. Todos os direitos reservados.</p>
+                <p>Feito com amor e muito café &#9749;</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="nav.js"></script>
+    <script>
+
+        const filiaisProximas = [
+            { nome: "Centro", lat: -23.550520, lon: -46.633308 },
+            { nome: "Bairro Norte", lat: -23.529133, lon: -46.639301 },
+            { nome: "Bairro Sul", lat: -23.585500, lon: -46.651650 }
+        ];
+
+        // Fórmula de Haversine — calcula distância entre dois pontos
+        function calcularDistancia(lat1, lon1, lat2, lon2) {
+            const R = 6371;
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+
+            const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                Math.sin(dLon / 2) * Math.sin(dLon / 2);
+
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+            return R * c;
+        }
+
+        function encontrarFilial() {
+            const resultado = document.getElementById("resultadoFilial");
+
+            if (!navigator.geolocation) {
+                resultado.innerText = "Seu navegador não permite geolocalização.";
+                return;
+            }
+
+            resultado.innerText = "Localizando...";
+
+            navigator.geolocation.getCurrentPosition(pos => {
+                const latUser = pos.coords.latitude;
+                const lonUser = pos.coords.longitude;
+
+                let filialProxima = null;
+                let menorDistancia = Infinity;
+
+                filiaisProximas.forEach(f => {
+                    const d = calcularDistancia(latUser, lonUser, f.lat, f.lon);
+                    if (d < menorDistancia) {
+                        menorDistancia = d;
+                        filialProxima = f;
+                    }
+                });
+
+                resultado.innerText =
+                    "A filial mais próxima é: " + filialProxima.nome +
+                    " • Distância aproximada: " + menorDistancia.toFixed(2) + " km";
+
+            }, () => {
+                resultado.innerText = "Não foi possível acessar sua localização.";
+            });
+        }
+
+        document.getElementById("btnLocalizacao").addEventListener("click", encontrarFilial);
+    </script>
+</body>
+</html>

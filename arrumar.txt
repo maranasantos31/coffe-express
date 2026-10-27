@@ -1,0 +1,8 @@
+COFFE EXPRESS - alterar
+
+- estrutura dos produtos do cardapio 
+- responsivar
+- colocar as fotos ceo
+- arrumar o rodapé (principalmente do carrinho)
+- arrumar cadastrar e entrar
+- fazer bd de tudo kk me fudi
